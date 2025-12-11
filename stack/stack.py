@@ -24,3 +24,9 @@ def expressionParenthesisParser(expression):
     operand_stack = []   # 数字（オペランド）用スタック
     operator_stack = []  # 演算子（オペレーター）用スタック
     temp_num = ''        # 複数桁の数字を一時的に保持する変数
+
+    def apply_op():
+        ope = operator_stack.pop()
+        num2 = operand_stack.pop()
+        num1 = operand_stack.pop()
+        operand_stack.append(calculate(ope, num1, num2))
