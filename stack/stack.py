@@ -30,3 +30,7 @@ def expressionParenthesisParser(expression):
         num2 = operand_stack.pop()
         num1 = operand_stack.pop()
         operand_stack.append(calculate(ope, num1, num2))
+    
+    for char in expression:
+
+        if char.isdigit()
