@@ -11,7 +11,7 @@ sns.set(style = "whitegrid")
 train_df = pd.read_csv('train.csv')
 test_df = pd.read_csv('test.csv')
 
-print (f"学習データの大きさ: {tarain_df.shape}")
+print (f"学習データの大きさ: {train_df.shape}")
 print (f"テストデータの大きさ: {test_df.shape}")
 
 
